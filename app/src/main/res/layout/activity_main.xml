@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/mineclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="mineclick"
+        android:text="Mining"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <Button
+        android:id="@+id/levelminingstrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="levelminingstrong"
+        android:text="Lvl Up"
+        app:layout_constraintBottom_toBottomOf="@+id/levelview"
+        app:layout_constraintStart_toStartOf="@+id/mineclick" />
+
+    <TextView
+        android:id="@+id/moneyview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/levelview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="46dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mineclick" />
+
+    <TextView
+        android:id="@+id/needformoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginBottom="2dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/levelminingstrong"
+        app:layout_constraintStart_toEndOf="@+id/levelminingstrong" />
+
+    <TextView
+        android:id="@+id/elseneed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="47dp"
+        app:layout_constraintStart_toStartOf="@+id/levelminingstrong"
+        app:layout_constraintTop_toTopOf="@+id/levelminingstrong" />
+
+    <Button
+        android:id="@+id/endday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:onClick="endday"
+        android:text="End Day"
+        app:layout_constraintStart_toStartOf="@+id/levelminingstrong"
+        app:layout_constraintTop_toBottomOf="@+id/elseneed" />
+
+    <TextView
+        android:id="@+id/deycount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="88dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/komurfiyat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="4dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/deycount"
+        app:layout_constraintTop_toTopOf="@+id/deycount" />
+
+    <Button
+        android:id="@+id/komurtopara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="komurtopara"
+        android:text="Change"
+        app:layout_constraintEnd_toEndOf="@+id/endday"
+        app:layout_constraintTop_toBottomOf="@+id/endday" />
+
+    <TextView
+        android:id="@+id/komurmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/mineclick"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
